@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EEG Research Consent Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Participant Consent Form for EEG-Based Research Study</h2>
+
+    <div class="section">
+    
+        <p><strong>Principal Investigator:</strong><br>
+            Nithish Kumar B<br>
+            Final Year Student, Department of AI & ML<br>
+            Email: nithishkumarb79@gmail.com<br>
+            Phone: +91-8867614955</p>
+
+        <p><strong>Purpose of the Study:</strong><br>
+            This study aims to analyze brainwave signals using the NeuroSky MindLink Mobile 2 to develop an adaptive learning model that can improve student focus and performance. The signals will be processed using STFT and Kalman filters to classify different cognitive states.</p>
+
+        <p><strong>Procedures:</strong><br>
+            As a participant, you will be asked to:
+            <ul>
+                <li>Wear the NeuroSky headset during study sessions (05-10 minutes).</li>
+                <li>Participate in basic learning/focus activities.</li>
+                <li>Allow EEG data collection for research use.</li>
+            </ul>
+        </p>
+
+        <p><strong>Voluntary Participation:</strong><br>
+            Participation is voluntary. You may withdraw at any time without penalty.</p>
+
+        <p><strong>Confidentiality:</strong><br>
+            Your data will be anonymized and stored securely. No identifying info will be included in publications.</p>
+
+        <p><strong>Risks and Discomforts:</strong><br>
+            There are no known risks. You may feel minor discomfort wearing the headset for longer time(1-2hrs) but we are used to do this(it is maximum of 15mins).</p>
+
+        <p><strong>Benefits:</strong><br>
+            While no direct benefit is guaranteed, your contribution supports research in adaptive learning systems.</p>
+    </div>
+
+    <form action="/submit" method="post">
+        <div class="section">
+            <label><strong>Full Name:</strong></label><br>
+            <input type="text" name="name" required><br><br>
+
+            <label><strong>Email:</strong></label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label><strong>Guide's Name:</strong></label><br>
+            <input type="text" name="guide" required><br><br>
+
+            <input type="checkbox" name="consent" value="Yes" required>
+            I have read and understood the above information and I voluntarily agree to participate.<br><br>
+
+            <button type="submit">Submit Consent Form</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
